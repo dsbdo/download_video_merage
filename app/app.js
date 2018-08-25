@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+const schedule = require('node-schedule');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
@@ -13,9 +14,21 @@ const shantou = require('./downloadMoudle/download_shantou.js');
 
 var app = express();
 function program() {
-  
+
+  schedule.scheduleJob('0 55 23 * * *', function () {
+
+    console.log('download call in server scheduleCronstyle:' + new Date());
+    jieyang();
+    shantou();
+});
+
+schedule.scheduleJob('0 55 16 * * *', function () {
+
+  console.log('download call in server scheduleCronstyle:' + new Date());
   jieyang();
   shantou();
+});
+
 }
 program();
 // view engine setup
