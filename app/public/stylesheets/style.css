@@ -1,0 +1,113 @@
+html div p body {
+  margin: 0px !important;
+  padding:  0px;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding:  0px;
+}
+.head {
+  height: 56px;
+  width: 100%;
+  text-align: center;
+  line-height: 56px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font-family: 'STFangsong', "Songti TC", 'simsun', '宋体', Arial, serif;
+  margin: 0px auto;
+  animation: 'fade-in-down' 0.6s 0.2s;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 3rem;
+
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(245, 245, 245);
+}
+.video-display {
+display: flex;
+width: 68%;
+height: 618px;
+overflow: hidden;
+align-items: center;
+}
+.video {
+
+height: 90%; 
+margin-left: auto; 
+margin-right: auto;
+}
+
+.video-list {
+display:inline-block;
+width: 32%;
+background-color: rgb(240, 240, 240);
+}
+.video-list ul {
+  padding: 0px;
+}
+.video-list ul li{
+ list-style-type:none;
+ height: 120px;
+ margin-left: 16px;
+ width: 80%;
+
+ margin-bottom: 16px;
+ display:flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.video-short-img {
+  width: 44%;
+  height: 120px;
+}
+.video-short-img img{
+  width: 100%;
+  height: 100%;
+}
+.video-list .video-list-title {
+  margin-left: 16px;
+}
+
+.video-info {
+  width: 56%;
+}
+.video-info .video-title {
+  display:block;
+  margin: 0 0 4px 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6rem;  
+  max-height: 3.2rem;
+  overflow: hidden;
+}
+.video-info .video-time {
+  --yt-endpoint-color: var(--yt-metadata-color);
+  color: var(--yt-metadata-color);
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 10px 0 4px 8px;
+  font-size: 0.8rem;
+}
+.video-info .is-watch {
+  display:  block;
+  --yt-endpoint-color: var(--yt-metadata-color);
+  color: var(--yt-metadata-color);
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 10px 0 4px 8px;
+  font-size: 0.8rem;
+}
+.foot {
+  text-align: center;
+  height: 5rem;
+  line-height:5rem;
+}
